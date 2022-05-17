@@ -113,7 +113,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     margin-right: 50px;
 }
 
-.header {
+.header-container {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -147,6 +147,26 @@ h1,h2,h3,h4,h5,h6,p,ul {
     color: var(--accent-color);
 }
 
+.nav-list li {
+    position: relative;
+}
+
+.nav-list .link:hover::after,
+.nav-list .link:focus::after,
+.item.current::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    background-color: var(--accent-color);
+}
+
 .contacts .item {
     color: var(--second-text-color);
     display: flex;
@@ -161,7 +181,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .hero {
     padding: 200px 0;
-    max-width: 1600px;
+    width: 1600px;
     max-height: 600px;
     background-color: var(--hero-bg-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mainpage-img/main-bg.jpg);
