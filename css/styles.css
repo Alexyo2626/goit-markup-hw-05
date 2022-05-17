@@ -297,6 +297,29 @@ h1,h2,h3,h4,h5,h6,p,ul {
     letter-spacing: 0.03em;
 }
 
+.what-doing .item {
+    position: relative;
+}
+
+.label {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    padding: 27px 0;
+    background: rgba(47, 48, 58, 0.8);
+}
+
 
 /* Styles for our team */
 
