@@ -151,8 +151,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
     position: relative;
 }
 
-.nav-list .link:hover::after,
-.nav-list .link:focus::after,
 .item.current::after {
     display: block;
     content: '';
