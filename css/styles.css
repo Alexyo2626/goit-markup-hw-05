@@ -15,6 +15,8 @@
 
     --color-icons: #AFB1B8;
 
+    --time-func: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -127,6 +129,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color 250ms var(--time-func);
 }
 
 .header .contacts {
@@ -217,6 +221,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     border-radius: 4px;
 
     cursor: pointer;
+
+    transition: background-color 250ms var(--time-func);
 }    
 
 .hero .btn:hover,
@@ -449,6 +455,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     height: 44px;
     border-radius: 50%;
     color: var(--color-icons);
+
+    transition: background-color 250ms var(--time-func);
 }
 
 .socials-icon {
@@ -496,6 +504,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     border: 1px solid var(--color-icons);
     border-radius: 4px;
     color: var(--color-icons);
+
+    transition: color 250ms var(--time-func), border-color 250ms var(--time-func);
 }
 
 .customers-icon {
@@ -540,6 +550,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
     font-size: 14px;
     line-height: 1.7;
+
+    transition: color 250ms var(--time-func);
 }
 
 .address .link:hover,
@@ -576,6 +588,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .bottom .socials-link {
     background-color: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
+
+    transition: background-color 250ms var(--time-func);
 }
 
 .bottom .socials-link:hover,
@@ -598,6 +612,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     letter-spacing: 0.03em;
     border: none;
     border-radius: 4px;
+
+    transition: background-color 250ms var(--time-func), color 250ms var(--time-func), box-shadow 250ms var(--time-func);
 }
 
 .portfolio .btn:hover,
@@ -645,6 +661,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .portfolio-group .link {
     display: block;
+
+    transition: box-shadow 250ms var(--time-func);
 }
 
 .portfolio-group .link:hover,
@@ -685,12 +703,12 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 .text-overlay {
     position: absolute;
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
     
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms var(--time-func);
 }
 
 .paragraph {
@@ -701,6 +719,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     color: #FFFFFF;
 } 
     
-.portfolio-group .link:hover .text-overlay{
+.portfolio-group .link:hover .text-overlay,
+.portfolio-group .link:focus .text-overlay {
     transform: translateY(-100%);
 }
