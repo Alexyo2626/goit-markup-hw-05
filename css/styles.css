@@ -464,7 +464,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     border-radius: 50%;
     color: var(--color-icons);
 
-    transition: background-color var(--time-func);
+    transition: color var(--time-func), background-color var(--time-func);
 }
 
 .socials-icon {
